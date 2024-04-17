@@ -1,0 +1,25 @@
+body {
+  background-image: url(/bg.png);
+  background-size: cover;
+}
+
+.editable-text {
+  width: min-content;
+  height: min-content;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 4px;
+  text-decoration-style:solid;
+}
+
+.editable-text:hover{
+  background-color: rgba(255, 0, 0, 0.167);
+}
+
+.inner {
+  display: none;
+}
+
+.editable-text:hover > .inner, .editable-text:focus > .inner {
+  display: flex;
+}
