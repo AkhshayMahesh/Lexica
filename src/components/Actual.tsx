@@ -2,7 +2,6 @@ import { useEffect, useState, useRef } from "react";
 import Trie from "../utils/trie";
 import SpellChecker from "../utils/spell";
 import corpus from "../utils/corpus";
-import { xor } from "three/examples/jsm/nodes/Nodes.js";
 
 type choice = {
     word: string;
@@ -137,7 +136,7 @@ const Actual = () => {
         e.target.setAttribute('contenteditable', true);
     }
 
-    const handleHoverOut = (e: any) => {xor
+    const handleHoverOut = (e: any) => {
         e.target.setAttribute('contenteditable', false);
     }
 

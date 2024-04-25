@@ -14,7 +14,7 @@ const Layout = (props: homeProps) => {
             {props.page == "landing" && <Landing />}
             {props.page == "try" && <Actual />}
             
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
